@@ -1,0 +1,33 @@
+.grid-hld {
+	margin: 0 auto;
+	width:  $edit-board-width;;
+	background-color: rgba(255, 251, 251, 0.5);
+	margin-bottom: 2rem;
+}
+.grid-board {
+	display: flex;
+  	flex-flow: row wrap;
+  	width: $edit-board-width;
+  	height: $edit-board-width;
+  	justify-content: space-around;
+	.grid-box {
+	  	margin: 1%;
+	  	background-color: $edit-background;
+	  	border-bottom: 2px solid;
+	  	img {
+	      max-width: 100%;
+	      width: 100%;
+	      display: inline-block;
+	      height: 100%;
+	      vertical-align: top;
+	    }
+	}
+}
+
+@include media-breakpoint-up(md) { 
+	.col-md-6 {
+	    margin-left: 1%;
+	    max-width: 48%;
+	    margin-right: 1%;
+	}
+}

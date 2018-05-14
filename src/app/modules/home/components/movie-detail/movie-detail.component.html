@@ -1,0 +1,49 @@
+<div class=" my-5">
+	<div class="back">
+		<button mat-button (click)="back()"><< Back to search page</button>
+	</div>
+	<div class="container details">
+
+		 <div class="row">
+		    <div class="col-md-6 col-12">
+		      <img [src]="movie?.Poster">
+		    </div>
+		    <div class="col-md-6 col-12">
+		    	<ul>
+		    		<li>
+		    			<span>
+					     	Title: {{movie?.Title}}
+					     </span>
+		    		</li>
+		    		<li>
+		    			<span>
+				     	Actors: {{movie?.Actors}}
+				     </span>
+		    		</li>
+		    		<li>
+		    			 <span>
+					     	Awards: {{movie?.Awards}}
+					     </span>
+		    		</li>
+		    		<li>
+		    			<span>
+					     	Director: {{movie?.Director}}
+					     </span>
+		    		</li>
+		    		<li>
+		    			<span>
+					     	Genre: {{movie?.Genre}}
+					     </span>
+		    		</li>
+		    		<li>
+		    			<span>
+					     	Plot: {{movie?.Plot}}
+					     </span> 
+		    		</li>
+		    	</ul>
+		     
+		    </div>
+		    
+		  </div>
+	</div>
+</div>

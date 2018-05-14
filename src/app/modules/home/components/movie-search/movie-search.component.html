@@ -1,0 +1,14 @@
+<form class="movie-search-form">
+   <mat-form-field class="movie-search-full-width  movie-search-color">
+    <input  #searchBox  type="search" matInput placeholder="Search Movies" 
+          (input)="showVersions(searchBox.value)"
+          (keyup.enter)="search(searchBox.value)"
+    		 [matAutocomplete]="auto" [formControl]="searchCtrl">
+    <mat-icon class="search-icon" matSuffix  (click)="search(searchBox.value)">search</mat-icon>
+     <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let movie of filteredMovie" [value]="movie.Title">
+        <span>{{ movie.Title }}</span> 
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

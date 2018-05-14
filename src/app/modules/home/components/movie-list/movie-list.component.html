@@ -1,0 +1,11 @@
+<div>
+	
+		<selected-list [movieToAdd]="movieToAdd"></selected-list>
+
+	<div class="container d-flex justify-content-around flex-row flex-wrap align-content-stretch">
+		
+		<movie-item class="movie-item"  (onSelect)="onSelected($event)" (onAddToList)="addToList($event)"
+				*ngFor="let movie of movieList" [movie]=movie></movie-item>
+
+	</div>
+</div>

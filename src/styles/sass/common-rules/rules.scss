@@ -1,0 +1,125 @@
+/* Text overflow elipses */
+.tofe {
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+}
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin smooting ($moz: grayscale, $webkit: antialiased) {
+  -moz-osx-font-smoothing: $moz;
+  font-smoothing: $webkit;
+  -webkit-font-smoothing: $webkit;
+}
+
+@mixin scroller ($scrollbar-color, $scrollbar-width, $shadow-color, $shadow-width, $tumb) {
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 $shadow-width $shadow-color;
+    background-color: #F5F5F5;
+  }
+  &::-webkit-scrollbar {
+    width: $scrollbar-width;
+    height: $scrollbar-width;
+    background-color: $scrollbar-color;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $tumb;
+  }
+}
+
+/* Transition and animation*/
+
+@mixin transition ($transition) {
+  -webkit-transition: $transition;
+  -moz-transition:    $transition;
+  -ms-transition:     $transition;
+  -o-transition:      $transition;
+}
+@mixin transition-all ($time: 0.5s, $property: all, $function: ease-in-out) {
+  -webkit-transition:$property $time $function;
+  -moz-transition:$property $time $function;
+  -o-transition:$property $time $function;
+  transition:$property $time $function;
+}
+
+@mixin icons-back ($url, $pos, $size, $repeat) {
+  background-image: url($url);
+  background-position: $pos;
+  background-size: $size;
+  background-repeat: $repeat;
+}
+@mixin background-order ($pos, $size, $repeat) {
+  background-position: $pos;
+  background-size: $size;
+  background-repeat: $repeat;
+}
+@mixin background-order-advanced ($pos, $size, $repeat, $attachment, $url) {
+  background-position: $pos;
+  background-size: $size;
+  background-repeat: $repeat;
+  background-attachment:  $attachment;
+  background-image: $url;
+}
+
+@mixin box-shadow ($string) {
+  -webkit-box-shadow: $string;
+  -moz-box-shadow:    $string;
+  box-shadow:         $string;
+}
+
+@mixin input-button {
+  border-width: 0px 0px 2px 0px;
+  border-color: rgba($edit-border, 0.1);
+  border-style: solid;
+  background-color: $edit-background;
+  &:focus, &:hover {
+    border-color: $edit-border;
+  }
+  &:disabled {
+    background-color: rgba($edit-background, 0.15);
+    cursor: default;
+    border-color: transparent;
+  }
+}
+@mixin input-button-style {
+  border-width: 0px 0px 2px 0px;
+  border-color: rgba($edit-border, 0.1);
+  border-style: solid;
+  &:focus, &:hover {
+    border-color: $edit-border;
+  }
+  &:disabled {
+    background-color: rgba($edit-background, 0.15);
+    cursor: default;
+    border-color: transparent;
+  }
+  width: 20rem;
+  text-align: center;
+  background-color: $edit-background;
+  border-radius: 0px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: $input-text-color;
+  padding: 1rem 2rem;
+}
+@mixin list-style {
+  &:hover {
+    background-color: $edit-background;
+  }
+  margin-bottom: 1px;
+  width: 20rem;
+  text-align: center;
+  background-color: $edit-background-dark;
+  border-radius: 0px;
+  font-size: 1rem;
+  color: $input-text-color;
+  padding: .5rem 2rem;
+}

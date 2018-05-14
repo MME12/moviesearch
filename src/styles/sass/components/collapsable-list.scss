@@ -1,0 +1,28 @@
+.collapsable-hld {
+	width: 20rem;
+	position: relative;
+  .collapsable-toggle {
+	@include input-button-style();
+  }
+  .collapsable{
+	  overflow: hidden;
+	  list-style: none;
+	  padding: 0;
+	   z-index: 1;
+	  position: absolute;
+	  overflow: auto;
+    max-height: 15rem;
+	  li {
+	  	@include list-style();
+	  }
+	}
+}
+
+.list-hidden {
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.list-shown {
+  height: auto !important;
+}

@@ -1,0 +1,37 @@
+.btn-hld {
+    margin: 1rem auto;
+    padding: 1rem 0rem;
+    overflow: hidden;
+      width: $edit-board-width;
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      .center {
+        display: block;
+        margin: 0 auto;
+      }
+      .left-spin {
+        margin-left: 1rem;
+      }
+      .rigth-spin {
+        margin-right: 1rem;
+      }
+      .btn {
+        border: none;
+        @include input-button();
+        color: $button-text-color;
+        line-height: $input-button-line-height;
+        min-width: 6rem;
+        padding: 0 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        @include box-shadow(0 0 0 transparent);
+        outline: none;
+      }
+      &.seperated {
+        border-bottom: 1px solid rgba($edit-border, .3);
+      }
+}

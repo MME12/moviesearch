@@ -1,0 +1,50 @@
+$base-font: 'Avenir', Helvetica, Arial, sans-serif;
+$base-color: #f0f8ff;
+$page-title-color: #555256;
+$board-back: #eef7f7;
+$board-invers-back: #060606;
+
+$smooter-back-color: rgba(#000000, .3);
+$dialogue-board-title-font: 1.5rem;
+
+$check-color: rgb(128, 0, 128);
+$table-color: black;
+$table-invers-color: white;
+$button-color: #555256;
+$button-text-color: white;
+$button-outline: rgba(#345f51, .8);
+
+$input-color: #fafeff;
+$input-text-color: white;
+$error-color: rgba(white, .9);
+$error-back-color: rgba(purple, .8);
+$error-text-color: rgba(purple, .8);
+
+
+$input-button-line-height: 3rem;
+$textarea-height: 8rem;
+$edit-board-width: 28rem;
+$edit-board-title-font: 1.25rem;
+$edit-board-title-color: #fbfbfb;
+$edit-border: $base-color;
+$edit-background: rgba($base-color, .7);
+$edit-background-dark: rgba($base-color, .95);
+$edit-outline: rgba(#1e1821, .7);
+$edit-board-seperator: rgba(#01231a, .3);
+
+$checkbox-border-color: #bcc7c7;
+
+$navbar-back-color: rgba(#062b3c, .95);
+$navbar-font-color: rgba(233, 245, 251, .9);
+
+$scrollbar-color: rgba($base-color, .5);  
+$scrollbar-width: .25rem;
+$shadow-color: rgba($base-color, .5); 
+$shadow-width: .1rem;
+$tumb: rgba($base-color, .1); 
+
+/* paths */
+
+$back: '../images/backgrounds/';
+$logos: '../images/logos/';
+$icons: '../images/icons/';

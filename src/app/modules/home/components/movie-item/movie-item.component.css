@@ -1,0 +1,15 @@
+.movie-pres {
+	flex-grow: 0;
+    flex-basis: 25%;
+    max-width: 12rem;
+    text-align: center;
+    padding: 1rem;
+
+}
+.movie-pres img {
+	width: 100%;
+	height: 10rem;
+}
+.movie-check {
+	margin-top: 1rem;
+}

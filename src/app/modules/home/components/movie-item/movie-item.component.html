@@ -1,0 +1,13 @@
+<div class="movie-pres" (click)="onSelected(movie.imdbID)">
+	<div>
+		<img [src]="movie.Poster">
+	</div>
+	<div>
+		{{movie.Title}}
+	</div>
+	<div class="movie-check d-flex justify-content-center">
+		<mat-chip-list>
+		  <mat-chip color="accent" (click)="toggle($event)">{{message}}</mat-chip>
+		</mat-chip-list>
+	</div>
+</div>

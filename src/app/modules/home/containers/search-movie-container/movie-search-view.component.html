@@ -1,0 +1,9 @@
+<div class=" my-5">
+	<div [style.display]="modeList ? 'block' : 'none'">
+		<movie-search (onSearch)="searchMovies($event)"></movie-search>
+		<movie-list [searchText]="searchText" (onSelect)="searchMovie($event)"></movie-list>
+	</div>
+	<div [style.display]="modeList ? 'none' : 'block'">
+		<movie-detail [searchId]="searchId" (onBack)="modeList = !modeList"></movie-detail>
+	</div>
+</div>

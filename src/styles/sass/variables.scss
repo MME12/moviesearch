@@ -1,0 +1,28 @@
+$navbar-back-color: rgba(#09141f, .95);
+$navbar-font-color: rgba(233, 245, 251, .9);
+$navbar-active-font-color: #92cbe8;
+$not-found-font-color: #387792;
+
+$background: url(../images/backgrounds/back.jpg);
+
+$input-button-line-height: 3rem;
+$textarea-height: 8rem;
+$board-width: 30rem;
+$min-board-width: 20rem;
+$edit-board-width: 20rem;
+$edit-board-title-font: 1.25rem;
+$edit-board-title-color: #555256;
+$edit-border: $base-color;
+$edit-background: rgba($base-color, .7);
+$edit-background-dark: rgba($base-color, .95);
+$edit-outline: rgba(#1e1821, .7);
+$edit-board-seperator: rgba(#01231a, .3);
+
+$scrollbar-color: rgba($navbar-back-color, .5);  
+$scrollbar-width: .25rem;
+$shadow-color: rgba($navbar-back-color, .5); 
+$shadow-width: .1rem;
+$tumb: rgba($navbar-back-color, .75); 
+
+$blue:    #92cbe8;
+$card-bg: rgba(white, .85);

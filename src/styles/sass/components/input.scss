@@ -1,0 +1,63 @@
+.edit-board {
+	width: $edit-board-width;
+	margin: 0rem auto;
+    padding: .75rem 0rem;
+    text-align: center;
+    &.seperated {
+      border-bottom: 1px solid rgba($edit-border, .3);
+    }
+    .title {
+      line-height: $input-button-line-height;
+      font-size: $edit-board-title-font;
+      color: $edit-board-title-color;
+      &.required::after {
+      	padding: 0 .5rem;
+      	content: '*';
+        color: $error-text-color;
+      	vertical-align: sub;
+      }
+    }
+    .editable {
+    	width: 100%;
+		  @include input-button();
+	    text-align: center;
+	    border-radius: 0px;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+	    outline: rgba($edit-outline, 0);
+      color: $input-text-color;
+      padding: 0 0 0 1rem;
+	}
+  select.editable option {
+        color: black;
+      }
+  .help.is-danger {
+    color: $error-back-color;
+    padding: .5rem 0;
+    display: inline-block;
+  }
+	.input-height {
+    line-height: $input-button-line-height;
+		height: $input-button-line-height;
+	}
+  .textarea {
+    height: $textarea-height;
+    text-align: left;
+    padding: .5rem 1rem;
+  }
+	.input-font {
+	    font-style: oblique;
+	}
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+  }
+  
+  .buttonLabel {
+      @include input-button-style();
+      background-color: rgba($base-color, .4);
+    }
+  .buttonLabel.checked {
+    background-color: rgba($base-color, .7);
+  }
+   
+}

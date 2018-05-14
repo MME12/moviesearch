@@ -1,0 +1,8 @@
+<div>
+	<ul>
+		<li *ngFor="let movie of list" >
+			<span>{{movie.Title}} </span>
+			<mat-icon class="search-icon" matSuffix  (click)="removeFromList(movie.id)">close</mat-icon>
+		</li>
+	</ul>
+</div>
