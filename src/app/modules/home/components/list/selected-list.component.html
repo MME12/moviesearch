@@ -1,8 +1,13 @@
-<div>
-	<ul>
-		<li *ngFor="let movie of list" >
+<div class="collapsable-hld mx-auto" *ngIf="list.length > 0">
+	<div class="list-toggle" (click)="toggleList()">Selected Movies
+		<mat-icon *ngIf="!shown" class="toggle-icon" matSuffix>keyboard_arrow_down</mat-icon>
+		<mat-icon *ngIf="shown"  class="toggle-icon" matSuffix>keyboard_arrow_up</mat-icon>
+	</div>
+	
+	<ul class="collapsable" *ngIf="shown">
+		<li *ngFor="let movie of list" (click)="toggleList(); open(movie.id)">
 			<span>{{movie.Title}} </span>
-			<mat-icon class="search-icon" matSuffix  (click)="removeFromList(movie.id)">close</mat-icon>
+			<mat-icon class="close-icon" matSuffix  (click)="removeFromList(movie.id)">close</mat-icon>
 		</li>
 	</ul>
 </div>

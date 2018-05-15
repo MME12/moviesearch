@@ -11,10 +11,24 @@
 	   z-index: 1;
 	  position: absolute;
 	  overflow: auto;
-    max-height: 15rem;
-	  li {
-	  	@include list-style();
-	  }
+	    max-height: 15rem;
+	    background-color: rgb(49, 55, 60);
+		  li {
+		  	@include list-style();
+		  }
+	}
+	.list-toggle {
+		padding: .75rem 2rem;
+	    color: white;
+	    font-size: 1.2rem;
+	    border-bottom: 1px solid;
+	    text-align: center;
+		background-color: rgb(49, 55, 60);
+	}
+	.mat-icon {
+		float: right;
+	    margin-right: -1.5rem;
+	    cursor: pointer;
 	}
 }
 

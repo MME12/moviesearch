@@ -1,6 +1,6 @@
 <div>
 	
-		<selected-list [movieToAdd]="movieToAdd"></selected-list>
+		<selected-list (onSelect)="onSelected($event)" [movieToAdd]="movieToAdd"></selected-list>
 
 	<div class="container d-flex justify-content-around flex-row flex-wrap align-content-stretch">
 		

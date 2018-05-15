@@ -13,7 +13,7 @@ html {
       height: 100%; 
       margin: 0;
       padding-top: 6rem;
-      background-color: rgba(#1a253c, .5);
+      background-color: rgba(#1a2e3c, .9);
       /* @include background-order-advanced (center, cover, no-repeat, fixed, $background); */
     }
     header {
@@ -44,5 +44,10 @@ html {
         display: inline-block;
       }
     }
-  
+  .mat-focused .mat-form-field-label {
+    color: #92cbe8;
+  }
+  .mat-form-field-ripple {
+    background-color: #92cbe8;
+}
 }
